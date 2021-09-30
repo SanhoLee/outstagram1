@@ -1,0 +1,11 @@
+{
+  "name": "outstagram1",
+  "version": "1.0.0",
+  "description": "App that inspired by instagram.",
+  "main": "index.js",
+  "author": "Sanho LEE",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
