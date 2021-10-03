@@ -3,9 +3,5 @@
 ## Todo-List
 
 - [ ] eslint setting
-- [ ] babel setting
+- [x] babel setting
 - [ ] express server setting
-
-## Done
-
-- [ ]
