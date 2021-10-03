@@ -5,7 +5,7 @@
   "author": "Sanho LEE",
   "license": "ISC",
   "scripts": {
-    "start": "nodemon --exec babel-node --presets @babel/env app.js"
+    "start": "nodemon init.js --exec babel-node --delay 2"
   },
   "dependencies": {
     "express": "^4.17.1"
@@ -15,6 +15,7 @@
     "@babel/core": "^7.15.5",
     "@babel/node": "^7.15.4",
     "@babel/preset-env": "^7.15.6",
+    "core-js": "^3.18.1",
     "nodemon": "^2.0.13"
   }
 }

@@ -1,12 +1,14 @@
 import express from "express";
+import routes from "./routes";
 
 const app = express();
 
-const PORT = 4000;
-app.get("/", (req, res) => {
-  res.send("hello world ! I'm Lee. ");
-});
+const sayHello = (req, res) => res.send("hello world ! I'm Lee. lalala");
+const handleMe = (req, res) => res.send("This is me page.");
+const handleSearch = (req, res) => res.send("This is search page.");
 
-app.listen(4000, () => {
-  console.log(`App Listening ... : http://localhost:${PORT}`);
-});
+app.get("/", sayHello);
+app.get("/me", handleMe);
+app.get("/search", handleSearch);
+
+export default app;
