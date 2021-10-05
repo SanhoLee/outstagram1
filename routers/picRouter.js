@@ -2,8 +2,8 @@ import express from "express";
 import { handleSearch } from "../controllers/picController";
 import routes from "../routes";
 
-const searchRouter = express.Router();
+const picRouter = express.Router();
 
-searchRouter.get(routes.search, handleSearch);
+picRouter.get(routes.pics, handleSearch);
 
-export default searchRouter;
+export default picRouter;

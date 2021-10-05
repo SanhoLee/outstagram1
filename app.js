@@ -1,8 +1,9 @@
 import express from "express";
 import cookieParser from "cookie-parser";
 import globalRouter from "./routers/globalRouter";
-import meRouter from "./routers/meRouter";
-import searchRouter from "./routers/searchRouter";
+import userRouter from "./routers/userRouter";
+import picRouter from "./routers/picRouter";
+
 import routes from "./routes";
 import helmet from "helmet";
 import morgan from "morgan";
@@ -18,7 +19,7 @@ app.use(morgan("dev")); //logger infomation.
 
 // Router Setting
 app.use(routes.home, globalRouter);
-app.use(routes.me, meRouter);
-app.use(routes.search, searchRouter);
+app.use(routes.users, userRouter);
+app.use(routes.pics, picRouter);
 
 export default app;

@@ -2,8 +2,8 @@ import express from "express";
 import routes from "../routes";
 import { handleMe } from "../controllers/userController";
 
-const meRouter = express.Router();
+const userRouter = express.Router();
 
-meRouter.get(routes.me, handleMe);
+userRouter.get(routes.users, handleMe);
 
-export default meRouter;
+export default userRouter;
