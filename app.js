@@ -12,6 +12,7 @@ const app = express();
 
 // middleware Setting
 app.use(helmet());
+app.set("view engine", "pug");
 app.use(cookieParser());
 app.use(express.json()); //original was body-parser.
 app.use(express.urlencoded({ extended: true }));
