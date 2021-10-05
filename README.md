@@ -2,6 +2,8 @@
 
 ## Todo-List
 
-- [ ] eslint setting
+- [x] eslint setting
 - [x] babel setting
-- [ ] express server setting
+- [x] express server setting
+- [x] view engine setting
+- [x] routes, router, controller structure setting
