@@ -3,6 +3,7 @@ html
     head 
         //- to use fontawesome data
         link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.5.0/css/allcss" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6+L3BlXeVIU", crossorigin="anonymous")
+        link(rel="stylesheet", href="/static/style.css")
     title outstagram1 | FWANGGU
     body
         include ../partials/header.pug
@@ -10,4 +11,4 @@ html
             p This is Body Main.
             block potato
         include ../partials/footer.pug
-        script ()
+        script(src="/static/main.js") 

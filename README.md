@@ -7,3 +7,4 @@
 - [x] express server setting
 - [x] view engine setting
 - [x] routes, router, controller structure setting
+- [ ] gulp setting.
