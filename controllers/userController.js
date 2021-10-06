@@ -1,1 +1,1 @@
-export const handleMe = (req, res) => res.send("This is me page.");
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */

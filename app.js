@@ -1,4 +1,5 @@
 import express from "express";
+import path from "path";
 import cookieParser from "cookie-parser";
 import globalRouter from "./routers/globalRouter";
 import userRouter from "./routers/userRouter";
@@ -13,6 +14,7 @@ const app = express();
 // middleware Setting
 app.use(helmet());
 app.set("view engine", "pug");
+app.set("views", path.join(__dirname, "views"));
 app.use(cookieParser());
 app.use(express.json()); //original was body-parser.
 app.use(express.urlencoded({ extended: true }));

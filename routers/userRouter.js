@@ -1,9 +1,16 @@
 import express from "express";
 import routes from "../routes";
-import { handleMe } from "../controllers/userController";
 
 const userRouter = express.Router();
 
-userRouter.get(routes.users, handleMe);
+// for me handleing.
+userRouter.get(routes.me, (req, res) => res.render("me"));
+userRouter.get(routes.editProfile, (req, res) => res.render("editProfile"));
+userRouter.get(routes.changePassword, (req, res) =>
+  res.render("changePassword")
+);
+
+// not me, another user.
+userRouter.get(routes.userDetail, (req, res) => res.render("userDetail"));
 
 export default userRouter;
