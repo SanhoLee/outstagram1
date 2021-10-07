@@ -15,6 +15,8 @@ const app = express();
 app.use(helmet());
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
+// app.use("/static", express.static(path.join(__dirname, "/static/js/")));
+app.use(express.static(path.join(__dirname, "static")));
 app.use(cookieParser());
 app.use(express.json()); //original was body-parser.
 app.use(express.urlencoded({ extended: true }));
