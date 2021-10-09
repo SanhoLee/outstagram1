@@ -4,6 +4,7 @@ import babel from "gulp-babel";
 import plumber from "gulp-plumber";
 import uglify from "gulp-uglify";
 import minifyCSS from "gulp-csso";
+import autoPrefixer from "gulp-autoprefixer";
 
 var sass = require("gulp-sass")(require("sass"));
 
@@ -27,6 +28,11 @@ const styles = () =>
   gulp
     .src(paths.styles.src)
     .pipe(sass())
+    .pipe(
+      autoPrefixer({
+        cascade: false,
+      })
+    )
     .pipe(minifyCSS())
     .pipe(gulp.dest(paths.styles.dst));
 
@@ -43,7 +49,12 @@ const js = async () => {
     .pipe(gulp.dest(paths.js.dst));
 };
 
-const dev = gulp.series(clean, styles, js);
+const watchFile = () => {
+  gulp.watch(paths.styles.watch, styles);
+  gulp.watch(paths.js.watch, js);
+};
+
+const dev = gulp.series(clean, styles, js, watchFile);
 
 export default dev;
 

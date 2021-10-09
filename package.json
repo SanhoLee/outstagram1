@@ -5,7 +5,9 @@
   "author": "Sanho LEE",
   "license": "ISC",
   "scripts": {
-    "start": "nodemon init.js --exec babel-node --delay 2"
+    "dev:server": "nodemon init.js --exec babel-node --delay 2",
+    "build:styles": "gulp",
+    "start": ""
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -29,6 +31,7 @@
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-csso": "^4.0.1",
     "gulp-plumber": "^1.2.1",
