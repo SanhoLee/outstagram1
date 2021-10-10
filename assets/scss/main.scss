@@ -1,0 +1,11 @@
+body {
+  justify-content: center;
+}
+
+main {
+  max-width: $contents_width;
+  max-height: $main_height;
+  height: $main_height;
+  margin: 0 auto;
+  margin-top: 25px;
+}
