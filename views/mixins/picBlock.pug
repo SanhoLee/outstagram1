@@ -1,0 +1,28 @@
+mixin picBlock()
+    .picBlock
+        .picBlock__header 
+            .user__thumnail 
+                img(src="/user_img.jpg", alt="user profile pic")
+            span.user__name fwanggus
+            .user__etc
+                i.fas.fa-ellipsis-h
+        .picBlock__pic 
+            img(src="/IMG_2675.jpg", alt="your Pic")
+        .picBlock__pic_contents 
+            .comments__header 
+                .comment_icons 
+                    i.far.fa-heart
+                    i.far.fa-comment
+            .comments__liked 
+                span 좋아요
+                span 1 개
+            .comments__fromME 
+                p 이곳은 이 사진에 대한 나의 설명입니다.
+            .comments__list 
+                .one_comment 
+                    .user__thumnail
+                        img(src="/user_img.jpg", alt="user profile pic")
+                    span.user__comment__id gmls0203
+                    span.user__comment hihi
+
+            .comments__addForm 

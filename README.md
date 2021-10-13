@@ -8,5 +8,5 @@
 - [x] view engine setting
 - [x] routes, router, controller structure setting
 - [x] gulp setting.
-- [ ] DB Setting
+- [ ] DB Setting (mongo DB)
 - [ ] CSS - overall structure.

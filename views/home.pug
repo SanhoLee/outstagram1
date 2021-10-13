@@ -1,5 +1,14 @@
 extend layout/main.pug 
+include mixins/picBlock
 
 block potato 
-  .home-pics 
-    p this is home-pics.
+  .home__body
+    .home-pics
+      +picBlock()
+    .home__user__recommend
+      li 
+        ul user1 
+        ul user2 
+        ul user3 
+
+

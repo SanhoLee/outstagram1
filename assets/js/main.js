@@ -4,6 +4,6 @@ const handleBodyClick = () => {
   body.style.backgroundColor = "yellow";
 };
 
-if (body) {
-  body.addEventListener("click", handleBodyClick);
-}
+// if (body) {
+//   body.addEventListener("click", handleBodyClick);
+// }
