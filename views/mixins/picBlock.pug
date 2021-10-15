@@ -1,13 +1,13 @@
-mixin picBlock()
+mixin picBlock( pic={} )
     .picBlock
         .picBlock__header 
             .user__thumnail 
-                img(src="/user_img.jpg", alt="user profile pic")
-            span.user__name fwanggus
+                img(src=pic.userAvatar, alt="user profile pic")
+            span.user__name=pic.userName
             .user__etc
                 i.fas.fa-ellipsis-h
         .picBlock__pic 
-            img(src="/IMG_2675.jpg", alt="your Pic")
+            img(src=pic.picUrl, alt="your Pic")
         .picBlock__pic_contents 
             .comments__header 
                 .comment_icons 
@@ -15,7 +15,7 @@ mixin picBlock()
                     i.far.fa-comment
             .comments__liked 
                 span 좋아요
-                span 1 개
+                span #{pic.numLiked} 개
             .comments__fromME 
                 p 이곳은 이 사진에 대한 나의 설명입니다.
             .comments__list 
@@ -24,5 +24,6 @@ mixin picBlock()
                         img(src="/user_img.jpg", alt="user profile pic")
                     span.user__comment__id gmls0203
                     span.user__comment hihi
-
             .comments__addForm 
+                form(action="")
+                    input(type="text", name="", placeholder=" 댓글 달기 ... ") 

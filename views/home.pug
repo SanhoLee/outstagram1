@@ -4,7 +4,13 @@ include mixins/picBlock
 block potato 
   .home__body
     .home-pics
-      +picBlock()
+      each item in pics 
+        +picBlock({
+          userName:item.username,
+          userAvatar:item.userAvatar,
+          picUrl:item.picUrl,
+          numLiked: item.numLiked,
+        })
     .home__user__recommend
       li 
         ul user1 

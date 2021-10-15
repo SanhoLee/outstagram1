@@ -1,4 +1,8 @@
 .home__body {
   display: grid;
-  grid-template-columns: 70% auto;
+  grid-template-columns: 615px 320px;
+}
+
+.home__user__recommend {
+  margin-left: 20px;
 }
