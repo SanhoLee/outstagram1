@@ -7,14 +7,14 @@ const SEARCH = "/search";
 
 // User
 const USERS = "/users";
-const USER_DETAIL = ":id";
+const USER_DETAIL = "/:id";
 const EDIT_PROFILE = "/edit_profile";
 const CHANGE_PASSWORD = "/change_password";
 const ME = "/me";
 
 // PICS
 const PICS = "/pics";
-const PICS_DETAIL = ":id";
+const PICS_DETAIL = "/:id";
 const UPLOAD = "/upload";
 const EDIT_PICS = "/edit_pics";
 const DELETE_PICS = ":id/delete";
@@ -36,7 +36,13 @@ const routes = {
 
   // PICS
   pics: PICS,
-  picsDetail: PICS_DETAIL,
+  // picsDetail: PICS_DETAIL,
+  picsDetail: (id) => {
+    if (id) {
+      return `/pics/${id}`;
+    }
+    return PICS_DETAIL;
+  },
   upload: UPLOAD,
   editPics: EDIT_PICS,
   deletePics: DELETE_PICS,

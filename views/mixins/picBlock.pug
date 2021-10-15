@@ -12,7 +12,8 @@ mixin picBlock( pic={} )
             .comments__header 
                 .comment_icons 
                     i.far.fa-heart
-                    i.far.fa-comment
+                    a(href=routes.picsDetail(pic.id)) 
+                        i.far.fa-comment
             .comments__liked 
                 span 좋아요
                 span #{pic.numLiked} 개
