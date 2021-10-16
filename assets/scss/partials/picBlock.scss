@@ -1,18 +1,39 @@
+.picBlock {
+  background-color: white;
+}
+
 .picBlock__header {
   height: 60px;
   display: grid;
-  grid-template-columns: 50px 1fr 1fr;
+  grid-template-columns: 70px 1fr 1fr;
+  align-items: center;
   border: 1px solid rgba(210, 210, 210, 0.7);
   border-radius: 5px 5px 0px 0px;
 }
 
+.picBlock__pic_contents {
+  padding: 0px 5px;
+}
+
 .user__thumnail {
+  height: 40px;
   img {
     width: 40px;
-    height: 40px;
+    height: inherit;
     object-fit: cover;
     border-radius: 20px;
   }
+  justify-self: center;
+}
+
+.user__name {
+  justify-self: left;
+  font-weight: bold;
+}
+
+.user__etc {
+  justify-self: right;
+  padding-right: 10px;
 }
 
 .picBlock__pic {
@@ -21,4 +42,46 @@
     width: 100%;
     height: auto;
   }
+}
+
+.comment__icons {
+  height: 60px;
+  padding: 10px 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 32px) 1fr;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 5px;
+
+  .icon_addComment {
+    padding-left: 40px;
+  }
+
+  .icon_bookmark {
+    justify-self: right;
+  }
+}
+
+.comments__liked {
+  margin-bottom: 10px;
+  span {
+    padding-right: 3px;
+    font-weight: bolder;
+  }
+}
+.comment_mine {
+  margin-left: 5px;
+}
+.comments__fromME {
+  margin-bottom: 10px;
+}
+
+.time__fromUploaded {
+  margin-bottom: 10px;
+  color: gray;
+  font-size: 13px;
+}
+
+.comments__addForm {
+  margin-bottom: 30px;
 }
