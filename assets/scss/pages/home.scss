@@ -1,8 +1,8 @@
 .home__body {
   display: grid;
-  grid-template-columns: 615px 320px;
+  grid-template-columns: $picBlock_width 1fr;
 }
 
-.home__user__recommend {
+.home__user__info {
   margin-left: 20px;
 }

@@ -1,19 +1,16 @@
-header.header 
-    .header_wrapper 
-        .header_column.logo
-            .header_logo
+header
+    .header 
+        .header_wrapper 
+            .header__logo
                 a(href=routes.home)
                     i.fab.fa-instagram.fa-2x
                     span.logo_text Instagram
-        .header_column 
             .header__search 
-                .search__form
-                    form(action="")
-                        input(type="text", placeholder="🔍 Search", name="searh")
-        .header_column
-            .header_icons 
-                a(href=routes.home)
-                    i.fas.fa-home.fa-2x
-                a(href=routes.me)   
-                    i.far.fa-user-circle.fa-2x
+                form(action="").search__form
+                    input(type="text", placeholder="🔍  검색", name="searh")
+        .header_icons 
+            a(href=routes.home)
+                i.fas.fa-home.fa-2x
+            a(href=routes.me)   
+                i.far.fa-user-circle.fa-2x
         
