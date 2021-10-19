@@ -5,4 +5,33 @@
 
 .home__user__info {
   margin-left: 20px;
+  height: 300px;
+  border: $border_style1;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.sideArea_thumnail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.sideArea_thumnail img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sideArea_thumnail span {
+  padding-left: 15px;
+}
+
+.sideArea_stat {
+  height: 80px;
+  border-top: 1px solid $border_color1;
 }
