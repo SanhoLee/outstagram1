@@ -1,22 +1,30 @@
 extend layout/main.pug 
 include mixins/picBlock
+ 
+
+block headerBlock 
+  if !fakeUser 
+    include partials/login_block.pug
+  else 
+    include partials/header.pug
 
 block potato
-  .home__body
-    .home-pics
-      each item in pics 
-        +picBlock({
-          userName:item.username,
-          userAvatar:item.userAvatar,
-          picUrl:item.picUrl,
-          numLiked: item.numLiked,
-          id:item.id,
-          commentIDs:item.commentIds
-        })
-    .home__user__info
-      .sideArea_thumnail
-        img(src="/user_img.jpg", alt="me Avatar ") 
-        span fwanggu 
-      .sideArea_stat 
+  if fakeUser 
+    .home__body
+      .home-pics
+        each item in pics 
+          +picBlock({
+            userName:item.username,
+            userAvatar:item.userAvatar,
+            picUrl:item.picUrl,
+            numLiked: item.numLiked,
+            id:item.id,
+            commentIDs:item.commentIds
+          })
+      .home__user__info
+        .sideArea_thumnail
+          img(src="/user_img.jpg", alt="me Avatar ") 
+          span fwanggu 
+        .sideArea_stat 
 
 
