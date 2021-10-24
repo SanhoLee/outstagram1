@@ -5,9 +5,14 @@ html
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css")
         link(rel="stylesheet", href="/styles/styles.css")
     title outstagram1 | FWANGGU
-    body
-        include ../partials/header.pug
-        main 
-            block potato
+    body 
+        //- if !fakeUser 
+        if fakeUser 
+            main 
+            include ../partials/login_block.pug
+        else 
+            include ../partials/header.pug
+            main 
+                block potato
         include ../partials/footer.pug
         script(src="/js/main.js") 

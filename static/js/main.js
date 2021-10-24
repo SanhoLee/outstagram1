@@ -1,1 +1,1 @@
-"use strict";var body=document.querySelector("body"),handleBodyClick=function(){body.style.backgroundColor="yellow"};
+"use strict";var main=document.querySelector("main"),loginBlock=document.getElementsByClassName("loginBlock");loginBlock.length&&(main.style.margin=0);

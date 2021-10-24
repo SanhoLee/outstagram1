@@ -1,0 +1,98 @@
+.loginBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.home__img img {
+  width: 600px;
+  display: block;
+}
+
+.home__login {
+  display: flex;
+  flex-direction: column;
+  margin-top: 135px;
+  margin-left: -60px;
+}
+
+.login_section {
+  width: 350px;
+  height: 300px;
+  border: $border_style1;
+  padding: 5px 30px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.home__login__logo {
+  padding: 20px 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.login_by_general form {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    height: 35px;
+    margin-bottom: 10px;
+    border: $border_style1;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: $html_color;
+  }
+  button {
+    height: 30px;
+    background-color: $login_btn;
+    border: none;
+    border-radius: 5px;
+    color: white;
+  }
+}
+
+.login_by_facebook,
+.login_find_passwd,
+.home__login__logo {
+  text-align: center;
+}
+
+.login_box_split_line {
+  height: 15px;
+  margin-bottom: 10px;
+}
+
+.login_by_facebook {
+  margin-bottom: 15px;
+}
+
+.join_section {
+  height: 60px;
+  background-color: white;
+  border: $border_style1;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+
+  a {
+    margin-left: 5px;
+  }
+}
+
+.download_setion {
+  text-align: center;
+  font-size: 15px;
+}
+
+.download__store {
+  margin-top: 15px;
+}
+.download__store img {
+  width: 136px;
+  height: 40px;
+  margin-left: 10px;
+}

@@ -1,9 +1,7 @@
-const body = document.querySelector("body");
+const main = document.querySelector("main");
 
-const handleBodyClick = () => {
-  body.style.backgroundColor = "yellow";
-};
+const loginBlock = document.getElementsByClassName("loginBlock");
 
-// if (body) {
-//   body.addEventListener("click", handleBodyClick);
-// }
+if (loginBlock.length) {
+  main.style.margin = 0;
+}

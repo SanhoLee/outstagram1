@@ -17,6 +17,11 @@ let pics = [
   },
 ];
 
+const user = {
+  name: "fwangguslee",
+  email: "stlsh0516@gmail.com",
+};
+
 export const home = async (req, res) => {
   await res.render("home", { pics });
 };
