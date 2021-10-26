@@ -9,7 +9,7 @@ block potato
         .join__hello 
           span 친구들의 사진과 동영상을 보려면  가입하세요.
       .join__form 
-        form(action="")
+        form(action=routes.join, method='post')
           .join__byFacebook__btn 
             button(type="submit")
               span Facebook으로 로그인 하기
@@ -18,10 +18,10 @@ block potato
             span 또는
             span
           .join__input 
-            input(type="email", placeholder="   이메일 주소 ")
-            input(type="text", placeholder="  성명 ")
-            input(type="text", placeholder="  사용자 이름 ")
-            input(type="password",  placeholder=" 비밀번호 ")
+            input(type="email", name="email",     placeholder="   이메일 주소 ")
+            input(type="text",  name="name"       placeholder="  성명 ")
+            input(type="text",  name="username",  placeholder="  사용자 이름 ")
+            input(type="password", name="password",  placeholder=" 비밀번호 ")
             button(type="submit") Sign in
     .have__account
         span 계정이 있으신가요?
@@ -30,7 +30,7 @@ block potato
     .download_section 
       span 앱을 다운로드 하세요 
       .download__store 
-        a(href="https://apps.apple.com/app/instagramid389801252?vt=lo", tabindex="0")
+        a(href="https://apps.apple.com/app/instagram/id389801252?vt=lo", tabindex="0")
           img(src="/applestore.png", alt="apple store")
-        a(href="https://play.google.com/store/apps/detailsid=com.instagram.androidreferrer=utm_source%3Dinstagramwebutm_campaign=loginPageig_mid=8CF3C24D-3F09-48C9-A8BE-ADE0688D250Futm_content=lo&utm_medium=badge", tabindex="0")
+        a(href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb&utm_campaign=loginPage&ig_mid=8CF3C24D-3F09-48C9-A8BE-ADE0688D250F&utm_content=lo&utm_medium=badge", tabindex="0")
           img(src="/googleplay.png", alt="google store")
